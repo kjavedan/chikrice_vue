@@ -1,0 +1,1 @@
+You can include sweets and snacks in your diet occasionally and in moderation, ideally after meals or during periods of increased physical activity, to minimize their impact on blood sugar levels and overall calorie intake.

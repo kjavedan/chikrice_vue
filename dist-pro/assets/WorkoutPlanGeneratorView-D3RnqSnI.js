@@ -1,0 +1,1 @@
+import{_ as e}from"./CommingSoon.vue_vue_type_script_setup_true_lang--G-EY3f5.js";import{d as o,c as s,A as a,e as t,o as r}from"./index-DOGQsmYe.js";const n=o({__name:"WorkoutPlanGeneratorView",setup:o=>(o,n)=>(r(),s("div",null,[a(t(e))]))});export{n as default};

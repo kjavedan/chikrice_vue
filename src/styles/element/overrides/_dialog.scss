@@ -1,0 +1,15 @@
+.ep-dialog {
+  border-radius: var(--ep-border-radius-base) !important;
+  width: 95%;
+  max-width: 800px;
+  border-radius: 14px !important;
+  max-height: 70vh !important;
+  overflow-y: scroll;
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 2rem !important;
+    padding-top: 2rem !important;
+    padding-right: 1.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+}

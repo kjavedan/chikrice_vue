@@ -1,0 +1,138 @@
+// Import dark theme
+@use 'element-plus/theme-chalk/src/dark/css-vars.scss' as *;
+
+// Overrides
+@import './element/overrides/card';
+@import './element/overrides/input';
+@import './element/overrides/select';
+@import './element/overrides/popper';
+@import './element/overrides/button';
+@import './element/overrides/collapse';
+@import './element/overrides/checkbox';
+@import './element/overrides/dropdown';
+@import './element/overrides/dialog';
+@import './element/overrides/radio';
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+}
+/* Width of the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle (scroll thumb) */
+::-webkit-scrollbar-thumb {
+  background: #9b9b9b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #818181;
+}
+/* Firefox */
+html {
+  scrollbar-width: thin; /* or 'auto' or 'none' */
+  scrollbar-color: #9b9b9b transparent; /* thumb color, track color */
+}
+
+:root {
+  // COLORS
+  --ep-bg-color: #fbfbfb !important;
+  --ep-bg-input: #ecf1f4;
+  --ep-color-link: #646cff;
+  --ep-color-card: #f1f1f1 !important;
+  --ep-color-gray: #d9d9d9;
+  --ep-bg-color-page: #646cff;
+  --ep-dialog-bg-color: #fbfbfb;
+  --ep-bg-color-overlay: #fafcfe;
+  --ep-text-color-primary: #000;
+  --ep-text-color-regular: #747474 !important;
+  --ep-text-color-secondary: #a7a7a7;
+  --ep-bg-color-overlay-hover: #efefef;
+
+  // FONTS
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+
+  // SPACING
+  --ep-component-size: 45px;
+
+  // BORDER
+  --ep-border-color: var(--ep-color-info-light-5);
+  --ep-border-width: 2px;
+  --ep-select-border: 2px;
+  --ep-border-radius-base: 8px !important;
+  --ep-border-radius-small: 4px;
+
+  // SHADOWS
+  --ep-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  --ep-box-shadow-lighter: rgba(0, 0, 0, 0.044) 2px 2px 6px 1px !important;
+}
+
+// DARK THEME
+html.dark {
+  // COLORS
+  --ep-bg-input: #191919;
+  --ep-bg-color: #181818 !important;
+  --ep-color-card: #1b1b1b !important;
+  --ep-color-gray: #555555;
+  --ep-dialog-bg-color: #0c0c0c;
+  --ep-text-color-primary: #d0d0d0 !important;
+  --ep-text-color-regular: #8b8b8b !important;
+  --ep-bg-color-overlay-hover: rgb(34, 34, 34);
+
+  // SHADOWS
+  --ep-box-shadow-light: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+a {
+  text-decoration: none;
+}
+
+.markdown-body {
+  h1,
+  h2,
+  h3 {
+    color: #3d3d3d;
+  }
+  p {
+    color: #6f6f6f;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  h3 {
+    margin-bottom: 0.4rem !important;
+  }
+
+  ul {
+    padding-left: 1rem !important;
+  }
+  li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.dark {
+  .markdown-body {
+    h1,
+    h2,
+    h3 {
+      color: #dddddd;
+    }
+    p {
+      color: #b8b8b8;
+    }
+  }
+}

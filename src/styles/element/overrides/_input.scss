@@ -1,0 +1,5 @@
+.ep-input__wrapper {
+  &.is-focus {
+    outline: var(--ep-border-width) var(--ep-border-style) var(--ep-color-primary);
+  }
+}

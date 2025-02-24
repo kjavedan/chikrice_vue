@@ -1,0 +1,1 @@
+We give the option to include some sweets and snacks in our diet system to provide variety, prevent monotony, and allow for occasional enjoyment while maintaining overall balance and adherence to health goals.

@@ -1,0 +1,11 @@
+.ep-popper {
+  border-radius: var(--ep-border-radius-base) !important;
+  border: none !important;
+}
+
+.ep-popper.is-light {
+  border: none;
+}
+.ep-popper.is-dark {
+  border: none;
+}

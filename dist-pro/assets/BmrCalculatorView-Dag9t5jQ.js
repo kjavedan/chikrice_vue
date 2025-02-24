@@ -1,0 +1,1 @@
+import{_ as e}from"./CommingSoon.vue_vue_type_script_setup_true_lang--G-EY3f5.js";import{J as o,c as s,A as t,o as n}from"./index-DOGQsmYe.js";const r=o({},[["render",function(o,r){const a=e;return n(),s("div",null,[t(a)])}]]);export{r as default};

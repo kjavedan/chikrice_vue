@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    // specifies ECMAScript version to compile to
+    "target": "ES2020",
+    // enable emitting ECMAScript compliant class fields initializtion
+    "useDefineForClassFields": true,
+    // define the modlue system
+    "module": "NodeNext",
+    // define the libraries to include when compiling ts code
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    // skip type checking of declaration files (*.d.ts)
+    "skipLibCheck": true,
+    // enable sourceMap for easier debugging
+    "sourceMap": true,
+    // enable interoperability between different module system (CommonJS, ESM)
+    "esModuleInterop": true,
+    // allow js file to be included in the compilation process
+    "allowJs": true,
+    // module resolving root directory
+    "baseUrl": "./",
+    // allow function default exports for the first function of the file
+    "allowSyntheticDefaultImports": true,
+    // allow implicit use of any
+    "noImplicitAny": false,
+    // define rules for module resolvation
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    // introduece global types of element plus
+    "types": ["element-plus/global"],
+
+    /* Bundler mode */
+    // specifies how module are resolved -> (bundlers(vite, webpack, ect.) or typescript)
+    "moduleResolution": "NodeNext",
+    // allow importing ts files without specifying file extention
+    "allowImportingTsExtensions": true,
+    // allow importing json files directly into ts files
+    "resolveJsonModule": true,
+    // disable type checking across files, treating each file as seperate compilation unit
+    "isolatedModules": true,
+    // prevent ts from emitting output files.
+    "noEmit": true,
+    // keep jsx as it is without transforming it
+    "jsx": "preserve",
+
+    /* Linting */
+    // enable all type checking
+    "strict": true,
+    // flag unused local variables as erros during compilation
+    "noUnusedLocals": true,
+    // flag unused function parameters as erros during compilation
+    "noUnusedParameters": true,
+    // flag fallthrough cases in switch statement as an error during compilation
+    "noFallthroughCasesInSwitch": true,
+    // force consisten file naming
+    "forceConsistentCasingInFileNames": true
+  },
+  // specifies the files or globs that ts should include in the compilation process
+  "include": ["src", "types/**/*.d.ts", "src/**/*.md"],
+  // refrence other ts project that should be built before this project
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
